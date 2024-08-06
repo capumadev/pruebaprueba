@@ -1,0 +1,183 @@
+@import url('color_and_general.css');
+@import url('https://fonts.googleapis.com/css2?family=Jaldi:wght@700&display=swap');
+
+.body {
+    display: flex;
+    justify-content: center; /*Alineacion en el eje X*/
+    font-family: 'Jaldi', sans-serif; 
+    margin: 0; /*Margen*/
+    padding: 0; 
+    background-color: var(--Soft-yellow); /*Color de fondo*/
+    height: 100vh; /*Espacio*/
+}
+
+/*------Configuracion de contenedor*/
+.container {
+    display: flex;
+    justify-content: center; /*Alineacion en el eje X*/
+    margin: 10px; /*Margen*/
+}
+/*------------------------------*/
+
+
+/*------------------------LADO IZQUIERDO DE LA PÁGINA-------------------*/
+
+/*------Configuracion Logo en grande*/
+/*Tamaño de logo*/
+#logo_img {
+    width: 616px; /*Ancho*/ 
+    height: 616px; /*Largo*/
+}
+/*Posición del logo*/
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*------------------------------*/
+/*------------------------------------------------------------------------*/
+
+
+
+/*------------------------LADO DERECHO DE LA PÁGINA-------------------*/
+
+
+/*-------------Descripción del juego*/
+/*Configuracion de contenedor*/
+.introduction {
+    display: flex;
+    flex-direction: column;/*Direccion en que se mostrara el contenido*/
+    align-items: center;
+    justify-content: center;/*Alineacion en el eje X*/
+    width: 45%; /*Ancho*/
+    margin: 20px; /*Margen*/
+}
+
+/*Título de Bienvenida*/
+.tittle {
+    display: flex;
+    font-size: 70px; /*Tamaño de letra*/
+    text-align: center; /*Posición de texto*/
+    color: var(--Clare-red);
+    margin-bottom: 25px; /*Margen en la parte inferior*/
+    font-family:'Courier New', Courier, monospace;
+}
+
+/*Configuracion de descripcion*/
+.resume {
+    color: var(--Dark-red); /*Color de letra*/
+    background-color: var(--White); /*Color de fondo*/
+    border-radius: 30px; /*Redondeado*/
+    font-size: 24px; /*Tamaño de letra*/
+    padding: 20px; /*Tamaño del Padding*/
+    margin-bottom: 25px;
+    text-align: justify; /*Alineacion de texto*/
+    font-family:'Courier New', Courier, monospace;
+}
+/*------------------------------*/
+
+
+/*------BOTONES EN LA PARTE INFERIOR*/
+/*Configuración de contenedor*/
+.buttons {
+    display: flex;
+    justify-content: center;/*Alineacion en el eje X*/
+    align-items: center; /*Alineacion en el eje Y*/ 
+    margin: 2.5%;
+}
+/*Configuración de botones*/
+.button {
+    display: flex;
+    /*Alineacion de contenido de botones*/
+    align-items: center;
+    justify-content: center;
+    /*----------------------------------*/
+    width: 50%; /*ANCHO*/
+    height: 90px;
+    border-radius: 50px; /*Redondeo*/
+    font-size: 30px; /*Tamaño de letra*/
+    font-weight: bold; /*Negrita*/
+    margin: 10px; 
+    color: var(--White); /*Color de letra*/
+    background-color: var(--Soft-green); /*Color de botón*/
+    border: 4px solid var(--Green); /*Borde de botón*/
+}
+
+/*Cambio de botones cuando el cursos pase encima*/
+.button:hover {
+    background-color: var(--Yellow); /*Color de botón*/
+    border: 4px solid var(--Dark-red); /*Borde de botón*/
+    color: var(--Dark-red); /*Color de letra*/
+}
+/*--------------------------*/
+
+
+/*------------------------------------------------------------------------*/
+
+
+
+/*------------------------PANTALLA MOVIL------------------*/
+@media (max-width: 480px){
+    .body {
+        height: 100vh; /*Espacio*/
+    }
+    /*------Configuracion de contenedor*/
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center; /*Alineacion en el eje X*/
+        margin: 10px; /*Margen*/
+    }
+    /*--------------------------------*/
+
+    /*------------------------LADO IZQUIERDO DE LA PÁGINA-------------------*/
+    /*------Configuracion Logo en grande*/
+    /*Tamaño de logo*/
+    #logo_img {
+        width: 150px; /*Ancho*/ 
+        height: 150px; /*Largo*/
+    }
+    /*Posición del logo*/
+    .logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    /*------------------------------------------------------------------------*/
+    /*------------------------LADO DERECHO DE LA PÁGINA-------------------*/
+    /*-------------Descripción del juego*/
+    /*Configuracion de contenedor*/
+    .introduction {
+        width: 100%; /*Ancho*/
+    }
+
+    /*Título de Bienvenida*/
+    .tittle {
+        font-size: 40px; /*Tamaño de letra*/
+        margin-bottom: 15px; /*Margen en la parte inferior*/
+    }
+
+    /*Configuracion de descripcion*/
+    .resume {
+        color: var(--Dark-red); /*Color de letra*/
+        border-radius: 30px; /*Redondeado*/
+        font-size: 14px; /*Tamaño de letra*/
+        padding: 20px; /*Tamaño del Padding*/
+        margin-bottom: 25px;
+        text-align: justify; /*Alineacion de texto*/
+        font-family:'Courier New', Courier, monospace;
+    }
+    /*------------------------------*/
+
+    /*------BOTONES EN LA PARTE INFERIOR*/
+    /*Configuración de botones*/
+    .button {
+        font-size: 20px; /*Tamaño de letra*/
+    }
+    /*------------------------------*/
+    /*------------------------------------------------------------------------*/
+
+}
+
+
